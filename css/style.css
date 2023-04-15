@@ -154,7 +154,7 @@ section:nth-child(even) {
 section.home {
   z-index: 0;
   position: relative;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   background: url("https://images.builderservices.io/s/cdn/v1.0/i/m?url=https%3A%2F%2Fstorage.googleapis.com%2Fproduction-hostgator-brasil-v1-0-6%2F226%2F1002226%2FDDuihw1G%2F872541e751204f84988e07b1e62301e2")
     no-repeat center;
   background-size: cover;
@@ -201,6 +201,10 @@ section.home {
   box-shadow: 0 0 2rem #111;
 }
 
+.home-image img {
+  filter: drop-shadow(0 0 1rem var(--shadow-color));
+}
+
 /* Media Queries */
 
 @media (max-width: 1200px) {
@@ -216,6 +220,11 @@ section.home {
 
   section {
     padding: 10rem 3% 2rem;
+    flex-direction: column;
+  }
+
+  section.home {
+    flex-direction: column-reverse;
   }
 
   section:last-child {
