@@ -76,6 +76,10 @@ section:nth-child(even) {
   max-height: 3rem;
 }
 
+.logo #small-logo {
+  display: none;
+}
+
 .navbar a {
   position: relative;
   font-size: 1.7rem;
@@ -239,6 +243,14 @@ section.home {
 }
 
 @media (max-width: 768px) {
+  .logo #wide-logo {
+    display: none;
+  }
+
+  .logo #small-logo {
+    display: block;
+  }
+
   #menu-icon {
     display: block;
   }
